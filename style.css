@@ -1,4 +1,4 @@
-html {
+html, body {
 	margin: 0;
 	padding: 0;
 	width: 100%;
@@ -6,7 +6,16 @@ html {
 }
 
 body {
-	margin: 0 auto;
-	max-width: 40em;
-	padding: 3em;
+	display: grid;
+	grid-template-rows: auto;
+	grid-template-columns: auto minmax(50%, 1fr) auto;
+}
+
+body > div {
+	padding: 2em;
+}
+
+#content {
+	margin: auto;
+	max-width: 50em;
 }
