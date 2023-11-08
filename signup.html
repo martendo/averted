@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Sign Up</title>
+		<link href="style.css" rel="stylesheet" type="text/css">
+	</head>
+	<body>
+		<p>Please fill out these small details to create your account:</p>
+		<table>
+			<tr>
+				<td><label for="inputname">Name</label></td>
+				<td><input id="inputname" type="text"></td>
+			</tr>
+			<tr>
+				<td><label for="inputaddress">Mailing address</label></td>
+				<td><input id="inputaddress" type="text"></td>
+			</tr>
+			<tr>
+				<td><label for="inputemail">Email address</label></td>
+				<td><input id="inputemail" type="email"></td>
+			</tr>
+			<tr>
+				<td><label for="inputtel">Phone number</label></td>
+				<td><input id="inputtel" type="tel"></td>
+			</tr>
+			<tr>
+				<td colspan="2"><input id="inputmessage" type="checkbox"> <label for="inputmessage">I agree to receive copius extraneous messaging</label></td>
+			</tr>
+			<tr>
+				<td><label for="inputbirth">Date of birth</label></td>
+				<td><input id="inputbirth" type="date"></td>
+			</tr>
+			<tr>
+				<td><label for="inputemploy">Sector of employment</label></td>
+				<td><input id="inputemploy" type="text"></td>
+			</tr>
+			<tr>
+				<td><label for="inputincome">Annual income</label></td>
+				<td>
+					<select id="inputincome">
+						<option>Less than $5 000</option>
+						<option>$5 000&ndash;$19 999</option>
+						<option>$20 000&ndash;$49 999</option>
+						<option>$50 000&ndash;$99 999</option>
+						<option>$100 000&ndash;$149 999</option>
+						<option>$150 000 or more</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td><label for="inputsin">Social Insurance Number</label></td>
+				<td><input id="inputsin" type="number"></td>
+			</tr>
+			<tr>
+				<td><label for="inputchildname">Name of firstborn child</label></td>
+				<td><input id="inputchildname" type="text"></td>
+			</tr>
+			<tr>
+				<td colspan="2"><input id="inputchild" type="checkbox"> <label for="inputchild">I agree to cede my firstborn child</label></td>
+			</tr>
+			<tr>
+				<td><label for="inputpassword">Password</label></td>
+				<td><input id="inputpassword" type="password"></td>
+			</tr>
+			<tr>
+				<td><label for="inputpasswordconfirm">Confirm password</label></td>
+				<td><input id="inputpasswordconfirm" type="password"></td>
+			</tr>
+		</table>
+		<p><button id="buttonsignup">Sign Up</button></p>
+		<p id="texterror">There was an error.</p>
+		<script type="text/javascript">
+			document.getElementById("buttonsignup").addEventListener("click", () => {
+				document.getElementById("texterror").style.display = "block";
+			});
+		</script>
+	</body>
+</html>
