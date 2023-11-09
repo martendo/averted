@@ -1,5 +1,6 @@
 * {
 	box-sizing: border-box;
+	font-family: "Times New Roman", serif;
 }
 
 html, body {
@@ -12,16 +13,11 @@ html, body {
 #container {
 	display: grid;
 	grid-template-rows: auto;
-	grid-template-columns: auto minmax(50%, 1fr) auto;
+	grid-template-columns: auto minmax(0, 50em) auto;
 }
 
 #container > div {
 	padding: 2em;
-}
-
-#content {
-	margin: auto;
-	max-width: 50em;
 }
 
 @keyframes fadein {
@@ -63,6 +59,7 @@ html, body {
 	text-decoration: none;
 	border-radius: 0.5em;
 	padding: 0.5em 1em;
+	font-size: 1em;
 }
 
 #texterror {
