@@ -61,7 +61,7 @@ body > section {
 
 .button {
 	border: none;
-	background-color: #303030;
+	background-color: #202020;
 	color: #ffffff;
 	display: inline-block;
 	text-align: center;
@@ -69,6 +69,25 @@ body > section {
 	border-radius: 0.5em;
 	padding: 0.5em 1em;
 	font-size: inherit;
+}
+
+.button:hover {
+	background-color: #404040;
+	cursor: pointer;
+}
+
+.button:active {
+	background-color: #000000;
+}
+
+.actions {
+	margin-top: 2em;
+	text-align: center;
+}
+
+.actions > * {
+	margin-left: 0.5em;
+	margin-right: 0.5em;
 }
 
 #texterror {
