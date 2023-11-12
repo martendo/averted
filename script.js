@@ -1,10 +1,17 @@
 const signup = document.getElementById("popupsignup");
+const buttonsoon = document.getElementById("buttonsignupsoon");
+let soontime = 30;
 
-document.getElementById("buttonsignupsoon").addEventListener("click", () => {
+buttonsoon.addEventListener("click", () => {
 	signup.style.display = "none";
 	setTimeout(() => {
 		signup.style.display = "grid";
-	}, 30000);
+	}, soontime * 1000);
+	soontime -= 5;
+	if (soontime < 5) {
+		soontime = 5;
+	}
+	buttonsoon.innerHTML = `Sign Up<br>in ${soontime} seconds`;
 });
 
 document.getElementById("buttoncookiesok").addEventListener("click", () => {
