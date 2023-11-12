@@ -38,9 +38,9 @@ body > section {
 	}
 }
 
-#popup {
+.popup {
 	background-color: #00000080;
-	animation: 0.5s linear 5s fadein;
+	animation: 0.5s linear 0s fadein;
 	animation-fill-mode: both;
 	position: fixed;
 	top: 0;
@@ -51,12 +51,16 @@ body > section {
 	place-items: center;
 }
 
-#popup > section {
+.popup > section {
 	padding: 2em;
 	background-color: #ffffff;
-	animation: 0.5s linear 5.5s fadein;
+	animation: 0.5s linear 0.5s fadein;
 	animation-fill-mode: both;
 	max-width: min(30em, 90%);
+}
+
+#popupsignup {
+	display: none;
 }
 
 .button {

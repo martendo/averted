@@ -1,8 +1,13 @@
-const popup = document.getElementById("popup");
+const signup = document.getElementById("popupsignup");
 
 document.getElementById("buttonsignupsoon").addEventListener("click", () => {
-	popup.style.display = "none";
+	signup.style.display = "none";
 	setTimeout(() => {
-		popup.style.display = "grid";
+		signup.style.display = "grid";
 	}, 30000);
+});
+
+document.getElementById("buttoncookiesok").addEventListener("click", () => {
+	document.getElementById("popupcookies").style.display = "none";
+	signup.style.display = "grid";
 });
