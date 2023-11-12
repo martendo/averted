@@ -68,6 +68,7 @@ body > section {
 	text-decoration: none;
 	border-radius: 0.5em;
 	padding: 0.5em 1em;
+	vertical-align: top;
 	font-size: inherit;
 }
 
