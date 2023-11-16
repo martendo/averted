@@ -35,11 +35,11 @@ header a {
 	text-decoration: none;
 	border-radius: 0.5em;
 	padding: 0.5em 1em;
+	cursor: pointer;
 }
 
 header a:hover {
 	background-color: #ffffff20;
-	cursor: pointer;
 }
 
 header a:active {
@@ -75,6 +75,7 @@ header a:active {
 	display: flex;
 	flex-direction: column;
 	width: min-content;
+	cursor: pointer;
 }
 
 .ad > img {
@@ -86,6 +87,12 @@ header a:active {
 	font-weight: bold;
 	margin: 0;
 	padding: 1em;
+}
+
+.banner {
+	width: 100%;
+	border: 1px solid #c0c0c0;
+	cursor: pointer;
 }
 
 @keyframes fadein {
@@ -135,11 +142,11 @@ header a:active {
 	padding: 0.5em 1em;
 	vertical-align: top;
 	font-size: inherit;
+	cursor: pointer;
 }
 
 .button:hover {
 	background-color: #404040;
-	cursor: pointer;
 }
 
 .button:active {
