@@ -8,18 +8,49 @@ html, body {
 	padding: 0;
 	width: 100%;
 	height: 100%;
+	display: grid;
+	grid-template-rows: auto minmax(0, 1fr);
+	overflow: auto;
 }
 
-body > section {
-	max-width: 50em;
-	margin: 2em auto;
-	padding: 2em;
-	background-color: #f0f0f0;
+header {
+	background-color: #202020;
+	color: #ffffff;
+	padding: 1em;
+	display: flex;
+	align-items: center;
+}
+
+header * {
+	display: inline-block;
+}
+
+header > * {
+	padding: 0 0.5em;
+}
+
+header a {
+	color: #d0d0d0;
+	text-decoration: none;
+	border-radius: 0.5em;
+	padding: 0.5em 1em;
+}
+
+header a:hover {
+	background-color: #ffffff20;
+	cursor: pointer;
+}
+
+header a:active {
+	background-color: #ffffff40;
+}
+
+.content {
+	overflow: auto;
 }
 
 #container {
 	display: grid;
-	grid-template-rows: auto;
 	grid-template-columns: auto minmax(0, 50em) auto;
 }
 
@@ -98,6 +129,13 @@ body > section {
 #texterror {
 	color: #ff0000;
 	display: none;
+}
+
+.form {
+	max-width: 50em;
+	margin: 2em auto;
+	padding: 2em;
+	background-color: #f0f0f0;
 }
 
 .form > p {
