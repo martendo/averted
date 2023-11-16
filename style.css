@@ -51,11 +51,38 @@ header a:active {
 
 #container {
 	display: grid;
-	grid-template-columns: auto minmax(0, 50em) auto;
+	grid-template-columns: minmax(min-content, 1fr) minmax(0, 50em) minmax(min-content, 1fr);
 }
 
 #container > div {
 	padding: 2em;
+}
+
+.sidebar {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.ad {
+	padding: 0.5em 0.5em 0 0.5em;
+	border: 1px solid #c0c0c0;
+	display: flex;
+	flex-direction: column;
+	width: min-content;
+}
+
+.ad > img {
+	width: 400px;
+	height: 300px;
+}
+
+.ad > p {
+	width: 400px;
+	font-family: Helvetica, sans-serif;
+	font-weight: bold;
+	margin: 0;
+	padding: 1em;
 }
 
 @keyframes fadein {
