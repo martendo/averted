@@ -67,13 +67,18 @@ header a:active {
 	align-items: center;
 }
 
-.ad {
-	padding: 0.5em 0.5em 0 0.5em;
+.ad, .banner, .centerimg {
 	border: 1px solid #c0c0c0;
+	cursor: pointer;
+	max-width: 100%;
+}
+
+.ad {
+	margin: 3em 0;
+	padding: 0.5em 0.5em 0 0.5em;
 	display: flex;
 	flex-direction: column;
 	width: min-content;
-	cursor: pointer;
 }
 
 .ad > img {
@@ -88,9 +93,13 @@ header a:active {
 }
 
 .banner {
+	display: block;
 	width: 100%;
-	border: 1px solid #c0c0c0;
-	cursor: pointer;
+}
+
+.centerimg {
+	display: block;
+	margin: 0 auto;
 }
 
 #floatad {
