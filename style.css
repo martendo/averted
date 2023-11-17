@@ -57,6 +57,7 @@ header a:active {
 
 #container > section {
 	padding: 2em 0;
+	line-height: 2;
 }
 
 .sidebar {
