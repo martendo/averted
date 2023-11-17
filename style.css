@@ -55,15 +55,12 @@ header a:active {
 	grid-template-columns: minmax(min-content, 1fr) minmax(0, 50em) minmax(min-content, 1fr);
 }
 
-#container > div {
-	padding: 2em;
-}
-
 #container > section {
 	padding: 2em 0;
 }
 
 .sidebar {
+	padding: 2em;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -93,6 +90,21 @@ header a:active {
 	width: 100%;
 	border: 1px solid #c0c0c0;
 	cursor: pointer;
+}
+
+#floatad {
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+}
+
+#floatad button {
+	position: absolute;
+	top: 5px;
+	right: 5px;
+	padding: 0;
+	width: 1.5em;
+	height: 1.5em;
 }
 
 @keyframes fadein {
