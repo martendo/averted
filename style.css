@@ -95,7 +95,22 @@ header a:active {
 
 #floatad {
 	position: fixed;
+}
+
+.float0 {
 	bottom: 20px;
+	right: 20px;
+}
+.float1 {
+	bottom: 20px;
+	left: 20px;
+}
+.float2 {
+	top: 20px;
+	left: 20px;
+}
+.float3 {
+	top: 20px;
 	right: 20px;
 }
 

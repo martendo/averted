@@ -21,14 +21,8 @@ document.getElementById("buttoncookiesok").addEventListener("click", () => {
 });
 
 const float = document.getElementById("floatad");
-let floatleft = false;
+let floatpos = 0;
 document.getElementById("buttonfloatclose").addEventListener("click", () => {
-	floatleft = !floatleft;
-	if (floatleft) {
-		float.style.right = "unset";
-		float.style.left = "20px";
-	} else {
-		float.style.right = "";
-		float.style.left = "";
-	}
+	floatpos = (floatpos + 1) % 4;
+	float.className = `float${floatpos}`;
 });
