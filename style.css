@@ -82,6 +82,8 @@ header a:active {
 	display: flex;
 	flex-direction: column;
 	width: min-content;
+	text-decoration: none;
+	color: initial;
 }
 
 .ad > img {
